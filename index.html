@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
+    <title>Grid Technology</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Grid Techology</h1> 
+        <div class="row">
+            <div class="col prop-name">styling element:</div>
+            <div class="col prop-value">"display: grid"</div>
+        </div>
+        <div class="row first-example">
+            <div class="col prop-name">
+                grid-template-column: 1fr 1fr 1fr;
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">item1</div>
+                    <div class="grid-item grid-item2">item2</div>
+                    <div class="grid-item grid-item3">item3</div>
+                </div>
+            </div>
+        </div>
+        <div class="row second-example">
+            <div class="col prop-name">
+                grid-template-column: 1fr 200px 1fr;
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">item1</div>
+                    <div class="grid-item grid-item2">item2</div>
+                    <div class="grid-item grid-item3">item3</div>
+                </div>
+            </div>
+        </div>
+        <div class="row third-example">
+            <div class="col prop-name">
+                grid-template-column: 1fr 200px 1fr <i>200px</i>;
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">item1</div>
+                    <div class="grid-item grid-item2">item2</div>
+                    <div class="grid-item grid-item3">item3</div>
+                </div>
+            </div>
+        </div>
+        <div class="row forth-example">
+            <div class="col prop-name">
+                grid-template-columns: min-content 1fr max-content
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae corporis suscipit alias eligendi? Impedit mollitia deleniti ipsa. Labore, exercitationem!</div>
+                    <div class="grid-item grid-item2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, fugit.</div>
+                    <div class="grid-item grid-item3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row fifth-example">
+            <div class="col prop-name">
+                grid-template-columns: 150px 200px minmax(200px, 400px);
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae corporis suscipit alias eligendi? Impedit mollitia deleniti ipsa. Labore, exercitationem!</div>
+                    <div class="grid-item grid-item2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, fugit.</div>
+                    <div class="grid-item grid-item3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row sixth-example">
+            <div class="col prop-name">
+                grid-template-columns: repeat(3, 1fr);
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae corporis suscipit alias eligendi? Impedit mollitia deleniti ipsa. Labore, exercitationem!</div>
+                    <div class="grid-item grid-item2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, fugit.</div>
+                    <div class="grid-item grid-item3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row seventh-example">
+            <div class="col prop-name">
+                grid-column-gap: 15px;;
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae corporis suscipit alias eligendi? Impedit mollitia deleniti ipsa. Labore, exercitationem!</div>
+                    <div class="grid-item grid-item2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, fugit.</div>
+                    <div class="grid-item grid-item3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row eight-example">
+            <div class="col prop-name">
+                grid-template-columns: 1fr 1fr;
+                <br>
+                grid-template-rows: 100px 100px 50px;
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae corporis suscipit alias eligendi? Impedit mollitia deleniti ipsa. Labore, exercitationem!</div>
+                    <div class="grid-item grid-item2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, fugit.</div>
+                    <div class="grid-item grid-item3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                    <div class="grid-item grid-item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque molestiae corporis suscipit alias eligendi? Impedit mollitia deleniti ipsa. Labore, exercitationem!</div>
+                    <div class="grid-item grid-item2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo, fugit.</div>
+                    <div class="grid-item grid-item3">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</div>
+                </div>
+            </div>
+        </div>
+        <div class="row ninth-example">
+            <div class="col prop-name">
+<pre>
+    .grid-item1{
+        grid-column-start:1;
+        grid-column-end:4;
+    }
+</pre>
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">item1</div>
+                    <div class="grid-item grid-item2">item2</div>
+                    <div class="grid-item grid-item3">item3</div>
+                    <div class="grid-item grid-item4">item4</div>
+                    <div class="grid-item grid-item5">item5</div>
+                </div>
+            </div>
+        </div>
+        <div class="row ten-example">
+            <div class="col prop-name">
+<pre>
+    .grid-item1{
+        grid-row-start:1;
+        grid-row-end:3;
+    }
+</pre>
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">item1</div>
+                    <div class="grid-item grid-item2">item2</div>
+                    <div class="grid-item grid-item3">item3</div>
+                    <div class="grid-item grid-item4">item4</div>
+                    <div class="grid-item grid-item5">item5</div>
+                </div>
+            </div>
+        </div>
+        <div class="row eleven-example">
+            <div class="col prop-name">
+<pre>
+    .grid-item1{
+        grid-row:1/3;
+        grid-column:3/4
+    }
+</pre>
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">item1</div>
+                    <div class="grid-item grid-item2">item2</div>
+                    <div class="grid-item grid-item3">item3</div>
+                    <div class="grid-item grid-item4">item4</div>
+                    <div class="grid-item grid-item5">item5</div>
+                </div>
+            </div>
+        </div>
+        <div class="row twelve-example">
+            <div class="col prop-name">
+<pre>
+    .grid-item1{
+        grid-area: 1/3/5/4;
+    }
+</pre>
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">item1</div>
+                    <div class="grid-item grid-item2">item2</div>
+                    <div class="grid-item grid-item3">item3</div>
+                    <div class="grid-item grid-item4">item4</div>
+                    <div class="grid-item grid-item5">item5</div>
+                </div>
+            </div>
+        </div>
+        <div class="row thirteen-example">
+            <div class="col prop-name">
+<pre>
+.grid{
+    display: grid;
+    grid-template-columns: repeat(12,[col] 1fr);
+    grid-template-rows: repeat(8,[row] 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+} 
+.grid-item4{
+    grid-row: row 1 / row 3; 
+    grid-column: col 1/ col 4;
+}
+</pre>
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">item1</div>
+                    <div class="grid-item grid-item2">item2</div>
+                    <div class="grid-item grid-item3">item3</div>
+                    <div class="grid-item grid-item4">item4</div>
+                    <div class="grid-item grid-item5">item5</div>
+                    <div class="grid-item grid-item6">item6</div>
+                    <div class="grid-item grid-item7">item7</div>
+                    <div class="grid-item grid-item8">item8</div>
+                    <div class="grid-item grid-item9">item9</div>
+                    <div class="grid-item grid-item10">item10</div>
+                    <div class="grid-item grid-item11">item11</div>
+                    <div class="grid-item grid-item12">item12</div>
+                    <div class="grid-item grid-item13">item13</div>
+                    <div class="grid-item grid-item14">item14</div>
+                    <div class="grid-item grid-item15">item15</div>
+                    <div class="grid-item grid-item11">item11</div>
+                    <div class="grid-item grid-item12">item12</div>
+                    <div class="grid-item grid-item13">item13</div>
+                    <div class="grid-item grid-item14">item14</div>
+                    <div class="grid-item grid-item15">item15</div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="row picture_making">
+            <div class="col prop-name">
+<pre>
+    Practice
+</pre>
+            </div>
+            <div class="col prop-value">
+                <div class="grid">
+                    <div class="grid-item grid-item1">item1</div>
+                    <div class="grid-item grid-item2">item2</div>
+                    <div class="grid-item grid-item3">item3</div>
+                    <div class="grid-item grid-item4">item4</div>
+                    <div class="grid-item grid-item5">item5</div>
+                    <div class="grid-item grid-item6">item6</div>
+                    <div class="grid-item grid-item7">item7</div>
+                    <div class="grid-item grid-item8">item8</div>
+                    <div class="grid-item grid-item9">item9</div>
+                    <div class="grid-item grid-item10">item10</div>
+                    <div class="grid-item grid-item11">item11</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
